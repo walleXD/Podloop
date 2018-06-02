@@ -4,7 +4,7 @@
       "rewrites": [
         {
           "source": "**/**",
-          "function": "app"
+          "function": "client"
         }
       ],
       "ignore": ["jsconfig.json", "**/.*", "**/node_modules/**", "client/"]

@@ -1,1 +1,1 @@
-export { nextApp as app } from "./app"
+export { nextApp as client } from "./client"

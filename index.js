@@ -1,2 +1,2 @@
-require = require("esm")(module)
+require = require("esm")(module) // eslint-disable-line
 module.exports = require("./functions")
