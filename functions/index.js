@@ -1,0 +1,1 @@
+export { nextApp as app } from "./app"

@@ -1,0 +1,30 @@
+{
+  "name": "@podlist/app",
+  "private": true,
+  "version": "0.0.1",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev:next": "next client",
+    "build:next": "next build client",
+    "deploy:next": "firebase deploy --only hosting,functions:app",
+    "deploy:fn": "firebase deploy --only functions:greetings",
+    "deploy": "firebase deploy",
+    "deploy:auth": "firebase login"
+  },
+  "devDependencies": {
+    "backpack-core": "^0.7.0",
+    "cpx": "^1.5.0",
+    "firebase-tools": "^3.18.5"
+  },
+  "dependencies": {
+    "esm": "^3.0.44",
+    "firebase-admin": "^5.12.1",
+    "firebase-functions": "^1.0.3",
+    "next": "^6.0.3",
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0",
+    "react-redux": "^5.0.7",
+    "redux": "^4.0.0"
+  }
+}
