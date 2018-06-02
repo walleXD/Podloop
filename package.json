@@ -1,5 +1,5 @@
 {
-  "name": "@podlist/app",
+  "name": "@podloop/core",
   "private": true,
   "version": "0.0.1",
   "main": "index.js",
@@ -36,12 +36,19 @@
   "dependencies": {
     "async-to-gen": "^1.4.0",
     "esm": "^3.0.44",
+    "express": "^4.16.3",
     "firebase-admin": "^5.12.1",
     "firebase-functions": "^1.0.3",
     "next": "^6.0.3",
+    "next-redux-wrapper": "^2.0.0-beta.6",
     "react": "^16.4.0",
     "react-dom": "^16.4.0",
     "react-redux": "^5.0.7",
-    "redux": "^4.0.0"
+    "react-redux-firebase": "^2.1.4",
+    "redux": "^4.0.0",
+    "redux-devtools-extension": "^2.13.2",
+    "redux-firestore": "^0.5.4",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.3.0"
   }
 }
