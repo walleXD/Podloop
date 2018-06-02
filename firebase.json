@@ -12,6 +12,6 @@
     "functions": {
       "source": ".",
       "predeploy":
-        "yarn build:next"
+        "yarn build"
     }
   }

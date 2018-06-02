@@ -5,12 +5,14 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "dev:next": "next client",
-    "build:next": "next build client",
-    "deploy:next": "firebase deploy --only hosting,functions:app",
-    "deploy:fn": "firebase deploy --only functions:greetings",
+    "dev": "next client",
+    "build": "next build client",
+    "deploy:next": "firebase deploy --only hosting,functions:next",
     "deploy": "firebase deploy",
-    "deploy:auth": "firebase login"
+    "deploy:auth": "firebase login",
+    "preserve": "yarn build",
+    "serve:next": "NODE_ENV=production firebase serve --only hosting,functions:next",
+    "predeploy": "yarn build"
   },
   "devDependencies": {
     "backpack-core": "^0.7.0",
