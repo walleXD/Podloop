@@ -22,7 +22,5 @@
   "rules": {
     "prettier/prettier": "error"
   },
-  "globals": {
-    "__static": true
-  }
+  "globals": {}
 }

@@ -1,17 +1,16 @@
 {
-    "hosting": {
-      "public": "public",
-      "rewrites": [
-        {
-          "source": "**/**",
-          "function": "client"
-        }
-      ],
-      "ignore": ["jsconfig.json", "**/.*", "**/node_modules/**", "client/"]
-    },
-    "functions": {
-      "source": ".",
-      "predeploy":
-        "yarn build"
-    }
+  "hosting": {
+    "public": "public",
+    "rewrites": [
+      {
+        "source": "**/**",
+        "function": "client"
+      }
+    ],
+    "ignore": ["jsconfig.json", "**/.*", "**/node_modules/**", "client/"]
+  },
+  "functions": {
+    "source": ".",
+    "predeploy": "yarn build"
   }
+}
