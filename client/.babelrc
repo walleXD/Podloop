@@ -3,6 +3,7 @@
     "next/babel",
     "@babel/preset-es2017"
   ],
+  "plugins": [],
   env: {
     development: {
       plugins: [

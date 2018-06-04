@@ -36,6 +36,8 @@
     "prettier": "^1.13.4"
   },
   "dependencies": {
+    "@material-ui/core": "^1.2.0",
+    "@material-ui/icons": "^1.1.0",
     "async-to-gen": "^1.4.0",
     "esm": "^3.0.44",
     "express": "^4.16.3",
