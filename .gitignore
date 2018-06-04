@@ -1,5 +1,5 @@
 next/
-.firebaserc
+*.firebaserc
 *.env.*
 
 ### Linux ###
