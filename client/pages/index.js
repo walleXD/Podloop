@@ -1,5 +1,12 @@
 import React from "react"
+import { Typography } from "@material-ui/core"
 
-const IndexPage = () => <div>Test Page</div>
+import withMaterial from "../lib/withMaterial"
 
-export default IndexPage
+const IndexPage = () => (
+  <div>
+    <Typography variant="display1">Welcome to Podloop 🎧</Typography>
+  </div>
+)
+
+export default withMaterial(IndexPage)
