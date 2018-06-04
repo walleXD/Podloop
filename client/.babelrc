@@ -1,0 +1,21 @@
+{
+  presets: [
+    "next/babel",
+    "@babel/preset-es2017"
+  ],
+  env: {
+    development: {
+      plugins: [
+        [
+          "inline-dotenv",
+          {
+            path: "./client/.env.development"
+          }
+        ]
+      ]
+    },
+    production: {
+      plugins: ["transform-inline-environment-variables"]
+    }
+  }
+}

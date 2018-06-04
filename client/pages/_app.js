@@ -1,10 +1,8 @@
 import React from "react"
-import { Provider } from "react-redux"
 import App, { Container } from "next/app"
-import withRedux from "next-redux-wrapper"
-import initStore from "../lib/initStore"
+import withRedux from "../lib/withRedux"
 
-export default withRedux(initStore)(
+export default withRedux(
   class AppRoot extends App {
     static async getInitialProps({ Component, ctx }) {
       return {
@@ -15,12 +13,10 @@ export default withRedux(initStore)(
     }
 
     render() {
-      const { Component, pageProps, store } = this.props
+      const { Component, pageProps } = this.props
       return (
         <Container>
-          <Provider store={store}>
-            <Component {...pageProps} />
-          </Provider>
+          <Component {...pageProps} />
         </Container>
       )
     }
