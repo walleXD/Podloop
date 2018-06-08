@@ -9,4 +9,4 @@ const IndexPage = () => (
   </div>
 )
 
-export default withMaterial(IndexPage)
+export default IndexPage

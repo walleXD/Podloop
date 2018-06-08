@@ -1,6 +1,7 @@
 import React, { Component } from "react"
 import { combineReducers } from "redux"
 import { Provider } from "react-redux"
+import { object } from "prop-types"
 
 import initStore from "./initStore"
 import allReducers from "../reducers"
@@ -50,6 +51,10 @@ export default WrappedComponent => {
         isServer,
         localStorageStore
       }
+    }
+
+    static propTypes = {
+      initialState: object
     }
 
     constructor(props) {

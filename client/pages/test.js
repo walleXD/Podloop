@@ -11,4 +11,4 @@ const TestPage = () => (
   </div>
 )
 
-export default withMaterial(TestPage)
+export default TestPage

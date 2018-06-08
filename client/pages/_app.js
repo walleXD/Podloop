@@ -1,7 +1,6 @@
 import React from "react"
 import App, { Container } from "next/app"
 
-import withRedux from "../lib/withRedux"
 import AppShell from "../layouts/AppShell"
 
 class AppRoot extends App {
@@ -25,4 +24,4 @@ class AppRoot extends App {
   }
 }
 
-export default withRedux(AppRoot)
+export default AppRoot

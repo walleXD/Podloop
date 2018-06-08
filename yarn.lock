@@ -390,7 +390,7 @@
     "@babel/helper-replace-supers" "7.0.0-beta.49"
     "@babel/plugin-syntax-class-properties" "7.0.0-beta.49"
 
-"@babel/plugin-proposal-decorators@7.0.0-beta.49", "@babel/plugin-proposal-decorators@^7.0.0-beta.49":
+"@babel/plugin-proposal-decorators@7.0.0-beta.49":
   version "7.0.0-beta.49"
   resolved "https://registry.yarnpkg.com/@babel/plugin-proposal-decorators/-/plugin-proposal-decorators-7.0.0-beta.49.tgz#5760ab683174e60ad670dc9c5ef39f1d7d349c7b"
   dependencies:

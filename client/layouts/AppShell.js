@@ -1,5 +1,10 @@
 import React from "react"
 import Link from "next/link"
+import { node } from "prop-types"
+import { compose } from "redux"
+
+import withMaterial from "../lib/withMaterial"
+import withRedux from "../lib/withRedux"
 
 const AppShellLayout = ({ children }) => (
   <div id="app-shell">
@@ -15,4 +20,11 @@ const AppShellLayout = ({ children }) => (
   </div>
 )
 
-export default AppShellLayout
+AppShellLayout.propTypes = {
+  children: node
+}
+
+export default compose(
+  withMaterial,
+  withRedux
+)(AppShellLayout)
